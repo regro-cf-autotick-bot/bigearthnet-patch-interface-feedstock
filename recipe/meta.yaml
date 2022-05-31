@@ -1,5 +1,5 @@
 {% set name = "bigearthnet-patch-interface" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bigearthnet_patch_interface-{{ version }}.tar.gz
-  sha256: bfb953c741aa6ccd2e44389bbfd9cfd95b85fb3a5625e56083df7c54e4dadc45
+  sha256: 93997a5c3e8f4043660cfa6c7dbb275c974ab42a8f582733bcecda7c7056e6cd
 
 build:
   noarch: python
@@ -18,7 +18,7 @@ requirements:
   host:
     - pip
     - poetry
-    - python >=3.8,<4.0
+    - python >=3.8,<3.11
   run:
     - natsort >=8,<9
     - numpy >=1.21,<2.0
