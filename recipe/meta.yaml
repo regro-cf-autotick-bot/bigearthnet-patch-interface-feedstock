@@ -1,13 +1,13 @@
 {% set name = "bigearthnet-patch-interface" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bigearthnet_patch_interface-{{ version }}.tar.gz
-  sha256: 93997a5c3e8f4043660cfa6c7dbb275c974ab42a8f582733bcecda7c7056e6cd
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: f31a3ab3504ed5e72462e517aca804fce5aad2f3499fcc451ad75198e429bcc3
 
 build:
   noarch: python
